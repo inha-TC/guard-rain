@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LoginPage</title>
   <script src="common.js"></script>
+  <link rel="stylesheet" href="loginStyle.css">
   <style>
     .title {
       color : skyblue;
@@ -15,15 +16,25 @@
   </style>
 </head>
 <body>
-  <h1 class="title">인하공업전문대학 우산대여서비스</h1>
-  <div>
-    <label><input type="text" id="ID"></label>
+  <!-- <h1 class="title">인하공업전문대학 우산대여서비스</h1> -->
+  <div class="background"></div>
+  <div class="card">
+    <img class="logo" src="img/font.jpeg">
+    <div class="logoTitle">
+      <img src="/img/Emblem.jpg" id="logo">
+      <!-- <h1 class="title"><span id="inha">인하공전 </span>우산대여서비스</h1> -->
+    </div>
+    <div class="weather">
+      <h2>날씨 API 삽입</h2>
+    </div>
+    <form class="form">
+      <input type="email" id="ID" placeholder="   이메일">
+      <input type="password" id="PW" placeholder="   비밀번호">
+      <input type="button" id="login" value="로그인" onclick="login()">
+    </form>
+    <footer>
+      <a href="Join_Page.html">Rain Guard 계정 생성하기</a>
+    </footer>
   </div>
-  <div>
-    <label><input type="text" id="PW"></label>
-  </div>
-  <input type="button" id="login" value="로그인" onclick="login()">
-  <a href="Join_Page.html"><input type="button" value="회원가입"></a>
-
 </body>
 </html>

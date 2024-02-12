@@ -15,8 +15,8 @@ function back() {
 }
 
 function create_id() {
-  const id = document.querySelector("#ID");
-  const pw = document.querySelector("#PW");
+  const id = document.querySelector("#j_ID");
+  const pw = document.querySelector("#j_PW");
   const r_pw = document.querySelector("#Check_PW");
 
   if (id.value == "" || pw.value == "" || r_pw == ""){

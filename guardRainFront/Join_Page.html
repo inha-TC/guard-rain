@@ -6,23 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JoinPage</title>
   <script src="common.js"></script>
+  <link rel="stylesheet" href="joinStyle.css">
 </head>
 <body>
-  <div>
-    <label>이메일 : <input id="ID" type="text"></label>
-  </div>
-  <div>
-    <label>비밀번호 : <input id="PW" type="text"></label>
-  </div>
-  <div>
-    <label>비밀번호 확인 : <input id="Check_PW" type="text"></label>
-  </div>
-  <!-- <div>
-    <label>전화번호 입력 : <input type="tel" id="Tel"></label> -->
-  </div>
-  <div>
-    <input id="Back" type="button" value="뒤로가기" onclick="back()">
-    <input id="Start" type="button" value="시작하기" onclick="create_id()">
-  </div>
+  <div class="card">
+    <!-- <img class="logo" src="img/font.jpeg"> -->
+    <div class="logoTitle">
+      <img src="/img/Emblem.jpg" id="logo">
+      <h1 class="title"><span id="inha">인하공전 </span>우산대여서비스</h1>
+    </div>
+    <form class="join_form">
+      <div class="input_account">
+        <input id="j_ID" type="email" placeholder="이메일">
+        <input id="Number" type="text" placeholder="인증번호 입력">
+        <input id="j_PW" type="password" placeholder="비밀번호">
+        <input id="Check_PW" type="password" placeholder="비밀번호 확인">
+        <input id="Phone_number" type="tel" placeholder="전화번호">
+      </form><br>
+    <form class="button_form">
+      <input id="join_Start" type="button" value="시작하기" onclick="create_id()"><br>
+      <input id="Back" type="button" value="뒤로가기" onclick="back()"><br>
+    </form>
+  </class>
 </body>
 </html>
